@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Saman Sai Prakash mallick Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Saman Sai Prakash Mallick</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Saman Sai Prakash Mallick</span></h1>
+				
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'MBA(Business Analystics)',
+					
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Business Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://github.com/Samansai" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>SamanSai Prakash mallick</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Business Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>1 year 3 months(only with Intership)</span></p>
+										<p><span class="title-s">Address: </span> <span>Odisha, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Power BI</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Tableau</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Excel</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Highly motivated and results-driven Business Analyst with a strong analytical and problem-solving foundation. Proven ability to leverage data analysis techniques and tools like Python, Excel, Tableau, SQL, and Power BI to uncover actionable insights and drive data-driven decision-making. Passionate about applying AI and digital marketing strategies to optimize business processes and achieve key performance indicators. Proven ability to collaborate effectively with cross-functional teams, communicate complex findings clearly, and deliver impactful business solutions.
+									</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Business &amp; Analytics</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master of Business Administration(Business Analytics)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Odia</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Numpy, Pandas, Matplotlib, Seaborn, Excel, SQL &amp; Google Analytics </span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Cooking, Traveling, Reading</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/saman-sai-prakash-mallick-186522240/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Analytical and results-driven Business Analyst with 1+ years of hands-on experience across HR, marketing, finance, and analytics through diverse internships. Proficient in SQL, Power BI, Tableau, Excel, and Python (with expertise in the EDA process), using these tools to translate complex data into strategic insights that drive business decisions. Adept at managing projects and conducting in-depth analysis to enhance operational efficiency and growth. Gained valuable international experience through a Business analyst workshop at Heriot-Watt University, Dubai, in collaboration with Google and Canon. Additionally,
+				 completed a 6-month internship as an Assistant Research Analyst at National Formosa University, Taiwan, further strengthening my data-driven approach to problem-solving.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2024- Oct 2024</span>
+						<h2>Data Analyst</h2>
+						<span class="position">Intern</span>
+						<p class="mt-4">Unified Mentor Ltd. is a company that specializes in providing mentoring, training, and consulting services to help individuals and organizations develop skills in areas like business strategy, technology, and leadership. 
+							<ul>
+								<li>Pre-processed, cleaned, and integrated data from over 20+ datasets, ensuring 95% data accuracy and readiness for analysis</li>
+								<li>Designed 8+ Power BI dashboards using DAX functions, reducing reporting time by 40%.</li>
+								<li>Streamlined data integration from SQL and Excel, improving processing speed by 30%.</li>
+								<li>Delivered tailored dashboards, enhancing decision-making efficiency.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March 2024- July 2024</span>
+						<h2>Rearch Analyst</h2>
+						<span class="position">Intern</span>
+						<p class="mt-4">National Formosa University (NFU) is a leading technical and vocational institution in Taiwan, known for its research and innovation in engineering, technology, and applied sciences. 
+							<ul>
+								<li>Analysed 10+ case studies, identifying trends to enhance analytical insights and decision-making.</li>
+								<li>Presented research findings, improving presentation clarity and team understanding by 15%.</li>
+								<li>Applied 5+ research methodologies, including surveys and customer segmentation, to drive actionable insights.</li>
+								<li>Collaborated with a diverse team, ensuring successful project completion in an international setting.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2023- July 2023</span>
+						<h2>Campus Ambassador</h2>
+						<span class="position">Intern</span>
+						<p class="mt-4">My Captain is an online learning platform that offers a wide range of courses aimed at helping individuals enhance their skills and pursue their passions through mentorship and hands-on experience.
+							<ul>
+								<li>Organized 5+ university events, including workshops and career fairs, engaging 500+ students, and increasing inquiries by 20% through targeted outreach.</li>
+								<li>Enhanced skills in event planning, marketing, and teamwork while effectively promoting the brand within the university.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June 2022- July 2022</span>
+						<h2>Finance Trainee</h2>
+						<span class="position">Intern</span>
+						<p class="mt-4">MCL (Mahanadi Coalfields Limited) is a subsidiary of Coal India Limited, engaged in coal mining and production, primarily serving the energy sector in India while contributing to the country's economic development through sustainable practices. 
+							<ul>
+								<li>Gained practical experience by applying finance skills in SAP and Excel, which enhanced my capabilities in financial analysis and management.</li>
+								<li>Developed a thorough understanding of financial data interpretation and reporting, enabling informed decision-making.</li>
+								<li>Enhanced analytical skills through real-world financial scenarios, improving my ability to identify trends and assess performance.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2023-2025</span>
+					<h2>MBA(Business Analytics)</h2>
+					<span class="position">Chandigarh University</span>
+					<p class="mt-4">Grade: 80% (Until First Year)</p>
+				</div>
+			</div>
+
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2023</span>
+    					<h2>Bachelor of Business Administration</h2>
+    					<span class="position">Siksha 'O' Anusandhan University</span>
+    					<p class="mt-4">Grade: 74%</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2020</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">T.I.M.E.S Scholars Gurukul</span>
+    					<p class="mt-4">Grade: 81.6%</p>
+    				</div>
+				</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018</span>
+    					<h2>Secondary school</h2>
+    					<span class="position">D.A.V Public School</span>
+    					<p class="mt-4">Grade: 62.4%%</p>
+    				</div>
+
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1uQogZaQU4EV-V_TKqTaG7pQirXY-6VjU/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & Tableau.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiZmE1MWIzNzItYTZlNy00ODA4LTlkYWYtZjI3NTQxY2IyOGI0IiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiZmE1MWIzNzItYTZlNy00ODA4LTlkYWYtZjI3NTQxY2IyOGI0IiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9">Bird strikes Data Analysis using Power BI</a></h3>
+                <p>Developed this dashboard to analyze bird strikes using FAA data from 2000-2011, highlighting their environmental impacts and safety concerns in aviation. By leveraging AI and MAS, we can find solutions to mitigate these risks during critical flight phases, demonstrating the role of analytics in transport and communication.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiZTJjYzIxMGQtOWY2Yy00ZTFhLWIyMWEtZTlkZDEyMzc0MWMxIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiZTJjYzIxMGQtOWY2Yy00ZTFhLWIyMWEtZTlkZDEyMzc0MWMxIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9">Big Game Census Analytics</a></h3>
+                <p>Created this Big Game Census data visualization to showcase where Super Bowl 52 players come from, along with related population figures and links to more census data. It uncovers fun facts that may sway your game preferences and sparks ideas for visualizing unique data points.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiZGI1MjdjMTQtZmU5MC00NWZiLWI2NGYtNTZiMmRkOWMzNzgzIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiZGI1MjdjMTQtZmU5MC00NWZiLWI2NGYtNTZiMmRkOWMzNzgzIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9">Amazon Sales Analytics</a></h3>
+                <p>Created a sales management dashboard using an Amazon dataset to analyze sales trends (month-wise, year-wise, and yearly-month-wise). By performing ETL, I identified key metrics and meaningful relationships between attributes, offering insights to optimize distribution, reduce costs, and increase profits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://app.powerbi.com/view?r=eyJrIjoiZGYxNTIxOWItZTE2My00NWI1LTk5N2MtMDU2ZTAyZmRjOGU4IiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiZGYxNTIxOWItZTE2My00NWI1LTk5N2MtMDU2ZTAyZmRjOGU4IiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9">Financial Analytics</a></h3>
+				  <p>In this dashboard, I analyzed the top 500 Indian companies' market capitalization and quarterly sales, uncovering key metrics and relationships between attributes to provide insights that help businesses improve their competitive positioning.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Samansai/Churn-analysis-python-/blob/main/TCA.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Samansai/Churn-analysis-python-/blob/main/TCA.ipynb">Customer Churn Analysis</a></h3>
+				  <p>Led the analysis of patient appointment data, employing EDA techniques to identify key factors influencing attendance rates. Investigated the impact of scholarship status, SMS reminders, and chronic conditions on patient no-shows, resulting in a 5% reduction in predicted no-show rates through targeted interventions.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	  
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				  <div class="block-18">
+					<div class="text">
+					  <strong class="number" data-number="10">0</strong>
+					  <span> Power Bi Projects</span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				  <div class="block-18">
+					<div class="text">
+					  <strong class="number" data-number="3">0</strong>
+					  <span>Excel Project</span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+					  <div class="text">
+						<strong class="number" data-number="3">0</strong>
+						<span>Python Project</span>
+					  </div>
+					</div>
+				  </div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				  <div class="block-18">
+					<div class="text">
+					  <strong class="number" data-number="3">0</strong>
+					  <span>SQL Project</span>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			  <!-- <div class="container"> -->
+				  <div class="row justify-content-center">
+					  <div class="col-md-7 ftco-animate text-center">
+						  <h2>More projects on<span> Github  </span> </h2>
+						  <div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						  <br>
+						  <p><a href="https://github.com/Samansai" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						  </div>
+					  </div>
+				  </div>
+			  <!-- </div> -->
+		  </div>
+	  </section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Odisha, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 8144822070</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+            <p><a href="mailto:info@yoursite.com">samansai253@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+				  <p><a href="https://drive.google.com/file/d/1uQogZaQU4EV-V_TKqTaG7pQirXY-6VjU/view?usp=drive_link">ResumeLink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQF1dlaxP76XocwOPg6NHFC3i09Hpc0bkVnBE69jyYrPVIwQ/viewform?usp=sf_link" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/saman-sai-prakash-mallick-186522240/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.facebook.com/sai.mallick.18?mibextid=LQQJ4d"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/sa_iiiiiii_/profilecard/?igsh=MXUzZXZtZ3Q5YWRjZg== "><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
